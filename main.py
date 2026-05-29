@@ -43,6 +43,9 @@ def traducir_audio(audio_file, idioma_label):
     # generar audio traducido
     # usamos gTTS (Google Text-to-Speech): https://github.com/pndurette/gTTS
 
+    if not texto_traducido.strip():
+        raise gr.Error("No se detectó voz en el audio. Intenta de nuevo.")
+
     try:
         os.makedirs("audio", exist_ok=True)
         lang_code = idioma_destino
