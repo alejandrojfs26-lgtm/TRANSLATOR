@@ -1,0 +1,7 @@
+openai-whisper
+typer
+rich
+translate
+gradio
+python-dotenv
+gtts
