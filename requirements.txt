@@ -1,7 +1,4 @@
-openai-whisper
-typer
-rich
-translate
-gradio
-python-dotenv
-gtts
+openai-whisper>=20231117
+translate>=3.6.1
+gradio>=5.0.0
+gtts>=2.5.0
